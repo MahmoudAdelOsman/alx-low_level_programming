@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+*_islower - chechs for lowercase character
+*@C: The character to be chacked
+*Return: 1 for lowercase character or 0 for anything else
+*/
+
+int _islower(int c)
+ 
+{
+      if ((c >= 65 && c <= 98) || (c >= 97 && c <= 122))
+		      {
+		      return (1);
+		      }
+      return (0);
+}
