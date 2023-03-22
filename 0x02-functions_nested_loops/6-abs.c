@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-  *_abs - Computes the absolute value of an integar.
-  *@C: The number to be computed.
-  *return: Absolute value of number or zero
-  */
+*_abs - Computes the absolute value of an integar.
+*@C: The number to be computed.
+*return: Absolute value of number or zero
+*/
 
-int _abs(int c)
+int _abs(int c);
+
 {
-
 	if (c < 0)
 	{
 		int abs_val;
