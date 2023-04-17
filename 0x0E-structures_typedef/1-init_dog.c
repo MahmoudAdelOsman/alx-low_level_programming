@@ -9,11 +9,11 @@
   * @owner: owner of dog
   */
 
-void init_dog(struct dog *d, char *owner, char *name, char age)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
 		d = malloc(sizeof(struct dog));
 	d->name = name;
-	d->gae = age;
+	d->age = age;
 	d->owner = owner;
 }
