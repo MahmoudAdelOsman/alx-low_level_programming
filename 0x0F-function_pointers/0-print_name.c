@@ -1,12 +1,12 @@
-#include "function_pointer.h"
-#include <stdio>
+#include "function_pointers.h"
+#include <stdio.h>
 
 /**
-  * print_name - prints a name
-  * @name: nedded string input
-  * @f: printer to function
-  * Return: nothing
-  */
+ * print_name - prints a name
+ * @name: needed string input
+ * @f: pointer to function
+ * Return: nothing
+ */
 
 void print_name(char *name, void (*f)(char *))
 {
