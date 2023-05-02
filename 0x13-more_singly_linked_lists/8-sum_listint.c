@@ -5,16 +5,17 @@
  * @head: First node in the linked list
  * Return: Summition
  */
+
 int sum_listint(listint_t *head)
 {
-	int s = 0;
-	listint_t *x = head;
+	int x = 0;
+	listint_t *y = head;
 
-	while (x)
+	while (y)
 	{
-		s += x->n;
-		x = x->next;
+		x += y->n;
+		y = y->next;
 	}
 
-	return (s);
+	return (x);
 }
