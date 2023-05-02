@@ -7,14 +7,14 @@
  */
 int sum_listint(listint_t *head)
 {
-	int sum = 0;
-	listint_t *temp = head;
+	int s = 0;
+	listint_t *x = head;
 
-	while (temp)
+	while (x)
 	{
-		sum += temp->n;
-		temp = temp->next;
+		s += x->n;
+		x = x->next;
 	}
 
-	return (sum);
+	return (s);
 }
