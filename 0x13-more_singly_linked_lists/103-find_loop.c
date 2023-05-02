@@ -5,27 +5,28 @@
   * @head: linked list to search for
   * Return: address of the node where the loop starts, or NULL
   */
+
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *slow = head;
-	listint_t *fast = head;
+	listint_t *s = head;
+	listint_t *f = head;
 
 	if (!head)
 		return (NULL);
 
-	while (slow && fast && fast->next)
+	while (s && f && f->next)
 	{
-		fast = fast->next->next;
-		slow = slow->next;
-		if (fast == slow)
+		f = f->next->next;
+		s = s->next;
+		if (f == s)
 		{
-			slow = head;
-			while (slow != fast)
+			s = head;
+			while (s != f)
 			{
-				slow = slow->next;
-				fast = fast->next;
+				s = s->next;
+				f = f->next;
 			}
-			return (fast);
+			return (f);
 		}
 	}
 
