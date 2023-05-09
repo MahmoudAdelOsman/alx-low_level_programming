@@ -40,7 +40,7 @@ void close_file(int x)
 
 	if (a == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close x %d\n", x);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", x);
 		exit(100);
 	}
 }
